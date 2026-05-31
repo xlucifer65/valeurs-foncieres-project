@@ -1,0 +1,14 @@
+# data files are too big for git
+data/
+*.txt
+*.csv
+
+# python stuff
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# env
+.env
+venv/
