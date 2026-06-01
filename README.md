@@ -17,9 +17,9 @@ See [CONTRIBUTORS.md](CONTRIBUTORS.md) for setup instructions and work split.
 |----------|-------------|--------|------|
 | 01_load_and_explore | Load 5 years, first look | rayyan | [nbviewer](https://nbviewer.org/github/xlucifer65/valeurs-foncieres-project/blob/main/notebooks/01_load_and_explore.ipynb) |
 | 02_cleaning | Missing values, types, outliers | rayyan | [nbviewer](https://nbviewer.org/github/xlucifer65/valeurs-foncieres-project/blob/main/notebooks/02_cleaning.ipynb) |
-| 03_eda_1d | 1D distributions per column | person 2 | — |
-| 04_eda_2d | 2D relationships between columns | person 2 | — |
-| 05_feature_engineering | New features for modeling | person 3 | — |
+| 03_eda_1d | 1D distributions per column | Sai Prasad | — |
+| 04_eda_2d | 2D relationships between columns | sai Prasad | — |
+| 05_feature_engineering | New features for modeling | Ebelechukwu | — |
 
 ## Project structure
 
@@ -31,12 +31,12 @@ data/         ← raw + intermediate files (gitignored, too large)
 
 ## Roadmap
 
-- [x] Setup + repo
-- [x] Load 5 years of data, merge, first look
-- [x] Cleaning — nulls, types, outliers, duplicates
-- [x] EDA 1D — distributions
-- [x] EDA 2D — relationships, correlations
-- [x] Feature engineering
+-  Setup + repo
+-  Load 5 years of data, merge, first look
+-  Cleaning — nulls, types, outliers, duplicates
+-  EDA 1D — distributions
+-  EDA 2D — relationships, correlations
+-  Feature engineering
 
 ## Key findings
 
