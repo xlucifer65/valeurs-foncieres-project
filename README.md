@@ -1,29 +1,51 @@
-# Valeurs Foncières - Data Science Project
+# Valeurs Foncières — Data Science Project
 
-French real estate transaction data (2021-2025) from data.gouv.fr
-
-## What this project does
-- Load and merge 5 years of property transaction data
-- Clean: missing values, nulls, outliers
-- EDA: 1D and 2D exploration
-- Feature engineering
+French real estate transaction data (2021–2025) from data.gouv.fr  
+**~20 million rows across 5 years**
 
 ## Data source
 https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres
 
-Data files go in `/data/` (not committed — too big, ~2.6GB total)
+## Team
+See [CONTRIBUTORS.md](CONTRIBUTORS.md) for setup instructions and work split.
 
-## Structure
+## Project structure
+
 ```
-notebooks/   - jupyter notebooks, one per step
-outputs/     - saved plots and exports
-data/        - raw txt files (gitignored)
+notebooks/
+  01_load_and_explore.ipynb   ← load all 5 years, first look (rayyan)
+  02_cleaning.ipynb           ← missing values, types, outliers (rayyan)
+  03_eda_1d.ipynb             ← 1D distributions per column (person 2)
+  04_eda_2d.ipynb             ← 2D relationships between columns (person 2)
+  05_feature_engineering.ipynb← new features for modeling (person 3)
+
+outputs/plots/                ← all generated plots
+data/                         ← raw + intermediate files (gitignored, too large)
 ```
 
-## Steps / roadmap
-- [x] Setup project
-- [ ] Load data + quick look
-- [ ] Cleaning (nulls, types, outliers)
-- [ ] EDA 1D (distributions per column)
-- [ ] EDA 2D (correlations, relationships)
-- [ ] Feature engineering
+## Roadmap
+
+- [x] Setup + repo
+- [x] Load 5 years of data, merge, first look
+- [x] Cleaning — nulls, types, outliers, duplicates
+- [x] EDA 1D — distributions
+- [x] EDA 2D — relationships, correlations
+- [x] Feature engineering
+
+## Key findings
+
+- **20.1M rows** after removing null valeur_fonciere (195k dropped)
+- **12.7M unique transactions** — DVF format generates avg 1.59 rows per transaction
+- Price outliers: flagged with 3x IQR (1.5x was too aggressive, removes 9.4% including valid commercial sales)
+- Transaction volume peaked in 2021–2022, clear drop from 2023 (interest rate hikes)
+- `nature_culture` (land type) affects price more than expected: AG land median 270k€ vs S (constructible) 185k€
+- `jour_semaine` tested and dropped — day of week affects volume but not price
+- IDF region is 2–3x more expensive per m² than other regions
+
+## Environment
+
+```bash
+pip install -r requirements.txt
+```
+
+Python 3.9+, tested with miniconda3.

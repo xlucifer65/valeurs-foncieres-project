@@ -1,6 +1,6 @@
 # data files are too big for git
 data/
-*.txt
+ValeursFoncieres-*.txt
 *.csv
 
 # python stuff
