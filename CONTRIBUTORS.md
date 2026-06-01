@@ -5,8 +5,8 @@
 | Person | Scope | Notebooks |
 |--------|-------|-----------|
 | rayyan ahemad | Data loading + Cleaning | 01, 02 |
-| [Person 2 name] | EDA 1D + EDA 2D | 03, 04 |
-| [Person 3 name] | Feature Engineering | 05 |
+| Sai Prasad | EDA 1D + EDA 2D | 03, 04 |
+| Ebellacheku | Feature Engineering | 05 |
 
 ---
 
