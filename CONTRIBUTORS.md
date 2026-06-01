@@ -62,7 +62,7 @@ git push origin main
 
 ---
 
-## Person 2 — [Name] (EDA)
+## Person 2 — Sai prasad(EDA)
 
 **Before starting:** get `cleaned.parquet` from person 1, put it in `data/`
 
@@ -81,7 +81,7 @@ git push origin main
 
 ---
 
-## Person 3 — [Name] (Feature Engineering)
+## Person 3 — Ebellacheku (Feature Engineering)
 
 **Before starting:** get `cleaned.parquet` from person 1, put it in `data/`
 
