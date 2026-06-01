@@ -9,18 +9,24 @@ https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres
 ## Team
 See [CONTRIBUTORS.md](CONTRIBUTORS.md) for setup instructions and work split.
 
+## Notebooks (click to view)
+
+> GitHub sometimes fails to render notebooks — use the nbviewer links below.
+
+| Notebook | Description | Author | View |
+|----------|-------------|--------|------|
+| 01_load_and_explore | Load 5 years, first look | rayyan | [nbviewer](https://nbviewer.org/github/xlucifer65/valeurs-foncieres-project/blob/main/notebooks/01_load_and_explore.ipynb) |
+| 02_cleaning | Missing values, types, outliers | rayyan | [nbviewer](https://nbviewer.org/github/xlucifer65/valeurs-foncieres-project/blob/main/notebooks/02_cleaning.ipynb) |
+| 03_eda_1d | 1D distributions per column | person 2 | — |
+| 04_eda_2d | 2D relationships between columns | person 2 | — |
+| 05_feature_engineering | New features for modeling | person 3 | — |
+
 ## Project structure
 
 ```
-notebooks/
-  01_load_and_explore.ipynb   ← load all 5 years, first look (rayyan)
-  02_cleaning.ipynb           ← missing values, types, outliers (rayyan)
-  03_eda_1d.ipynb             ← 1D distributions per column (person 2)
-  04_eda_2d.ipynb             ← 2D relationships between columns (person 2)
-  05_feature_engineering.ipynb← new features for modeling (person 3)
-
-outputs/plots/                ← all generated plots
-data/                         ← raw + intermediate files (gitignored, too large)
+notebooks/    ← analysis notebooks
+outputs/plots/← all generated plots (PNG)
+data/         ← raw + intermediate files (gitignored, too large)
 ```
 
 ## Roadmap
